@@ -1,0 +1,64 @@
+cross==Cross-Origin Resource Sharing
+
+    fetch() and XMLHttpRequest follow the same-origin policy. 
+    This means that a web application using those APIs can only request resources from the same origin 
+    the application was loaded unless the response from other origins includes the right CORS headers.
+
+     The CORS mechanism supports secure cross-origin requests and data transfers between browsers and servers
+
+    "preflighted" requests the browser first sends an HTTP request using the OPTIONS method
+     to the resource on the other origin, in order to determine if the actual request is safe to send
+
+    while loading a web page(or) browser if suppose we are trying to get data from domain(a) while loding (a) 
+    browser sends ajax call to the another domain(b)
+    browser restricts this kind of process
+    cros helps using
+    preflight receives req,res,from these different domains
+    after that ajax call will be forwarded to browser
+    if its restricts access-control-origin-errors./b.com
+    browser decides wheather ajax call need to forwardedor not
+
+     =>types
+    Simple Requests            
+     =>Use of HTTP methods: GET, POST, or HEAD.
+     =>Only certain headers are allowed, such as Accept, Content-Language, Content-Type with certain values
+
+    Preflight Requests         
+     =>Involve HTTP methods other than (GET,POST,HEAD) such as PUT, DELETE, or CONNECT.
+     =>Use of custom headers or non-standard content types.
+     =>Requests that might modify data on the server
+
+     Preflight is an extra request sent by the browser before the actual request
+     when a cross-origin request has special conditions (like custom headers or unsafe HTTP methods).
+
+
+    1️ Browser Sends an OPTIONS Request
+        =>Before sending the actual request, 
+        =>the browser sends an HTTP OPTIONS request to check if the server allows it.
+        =>This OPTIONS request does not contain the actual data—it just asks the server what’s allowed.
+
+    2️ Server Responds with Allowed Rules
+        =>The server replies with CORS headers, specifying which methods, headers, and origins are permitted.
+
+3️ Browser Sends the Actual Request
+=>If the response allows it, 
+=>the browser proceeds with the actual request.
+
+=>CORP-related errors occur when a website tries to load a resource from another origin
+=>Problem:
+If your React frontend loads fonts/images from a different origin with a strict CORP policy, they won’t render.
+
+
+
+ HTTP response headers          (Sent by the server)
+            =>Access-Control-Allow-Origin           (*) all origins are allowed to access the resource  (or) we can use specific url
+            =>Access-Control-Expose-Headers         []* all Headers are allowed to access the resource  (or) we can use specific Headers
+            =>Access-Control-Max-Age                how long (time)we can use
+            =>Access-Control-Allow-Credentials      =true if this header is not returned with the resource, the response is ignored by the browser
+            =>Access-Control-Allow-Methods          Specifies allowed HTTP methods(GET,POST,PUT,DELEATE)
+            =>Access-Control-Allow-Headers          Content-Type, Authorization
+
+ HTTP request headers           (Sent by the Browser)
+            =>Access-Control-Request-method         Used to inform the server which HTTP method is used in the actual request.
+            =>Access-Control-Request-Headers        Used to specify which headers will be included in the actual request.
+

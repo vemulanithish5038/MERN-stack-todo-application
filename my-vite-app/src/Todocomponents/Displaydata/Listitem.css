@@ -1,0 +1,39 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.userlistoftasks{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    padding:    5px;
+}
+
+.deletelogo{
+    height: 20px;
+    aspect-ratio: 1/1;
+    
+}
+
+#inputcheckbox{
+    height: 20px;
+    aspect-ratio: 1/1;
+}
+
+.delete-all-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .delete-all-button:hover {
+    background-color: darkred;
+  }
+  

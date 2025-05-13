@@ -1,0 +1,29 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.todo-application{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.todologo{
+     height:1cm ;
+     aspect-ratio: 1/1;
+     margin: 0px 20px;
+}
+
+
+.themebuttoncontainer{
+    padding-left: 250px;
+}
+.themebutton{
+    
+    display: flex;
+    justify-content: end;
+    background-color: none;
+}
