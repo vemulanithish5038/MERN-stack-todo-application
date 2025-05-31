@@ -1,4 +1,3 @@
-![Screenshot 2025-05-31 105529](https://github.com/user-attachments/assets/5e416e80-1ef8-4d07-a400-cb1eb8611a91)
 # TodoMaster
 
 A simple and responsive full-stack Todo Application built with React, TypeScript, CSS, Node.js, Express, and MongoDB.
@@ -18,8 +17,6 @@ Users can:
 The **backend** is built with Node.js and Express, providing RESTful APIs to interact with the **MongoDB** database using Mongoose. 
 Each task consists of a description and a completion status.
 The frontend communicates with the backend using asynchronous API calls (GET, POST, PUT, DELETE). 
-![Screenshot 2025-05-31 105529](https://github.com/user-attachments/assets/db7b8c1b-4f50-46f8-92ad-a4f80aed0c3a)
-![Screenshot 2025-05-31 105529](https://github.com/user-attachments/assets/2ed2d734-c439-488c-a76b-9957b9a71b6e)
 The project structure follows modular design, making it scalable and maintainable.
 It’s a great project for learning or demonstrating **MERN stack** skills with **TypeScript** integration.
 
