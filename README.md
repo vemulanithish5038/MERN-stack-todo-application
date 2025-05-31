@@ -80,5 +80,17 @@ It’s a great project for learning or demonstrating **MERN stack** skills with 
 
   
 
-  
-![Screenshot 2025-05-31 105529](https://github.com/user-attachments/assets/b0e972f1-e306-4815-8028-b02c615080ed)
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home Page](![Screenshot 2025-05-31 105529](https://github.com/user-attachments/assets/b0e972f1-e306-4815-8028-b02c615080ed))
+
+### ➕ Adding a Task
+![Add Task]([./screenshots/add-task.png](https://github.com/vemulanithish5038/MERN-stack-todo-application/commit/e530047fceff1d8ecc5d7d5f429eab8c3b84f574#commitcomment-158636627))
+
+### ✅ Task Completed
+![Completed Task]([./screenshots/completed-task.png](https://github.com/vemulanithish5038/MERN-stack-todo-application/commit/e530047fceff1d8ecc5d7d5f429eab8c3b84f574#commitcomment-158636702))
+
+
+### ✅ Delete Task
+![Completed Task](https://github.com/vemulanithish5038/MERN-stack-todo-application/commit/e530047fceff1d8ecc5d7d5f429eab8c3b84f574#commitcomment-158636707)
